@@ -1,5 +1,5 @@
-const formula = require('../Models/formula')
-const unit = require('../Models/unit')
+const formula = require('./src/formula')
+const unit = require('./src/unit')
 
 const f1 = formula.force(5, 1, 0.1),
     f2 = formula.force(2, 1, 0.1),

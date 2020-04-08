@@ -1,5 +1,5 @@
-const unit = require('../Models/unit')
-const constants = require('../Models/constants')
+const unit = require('./unit')
+const constants = require('./constants')
 
 module.exports = {
     force(Q, q, d) { // Q = Carga 1, q = Carga 2, d = Distancia em metros.
