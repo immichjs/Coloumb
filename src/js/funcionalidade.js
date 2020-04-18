@@ -22,6 +22,8 @@ buttonForce1.onclick = () => {
     
     buttonForce1.style.display = 'none'
     buttonForce1.style.visibility = 'hidden'
+    buttonForce2.style.display = 'inline'
+    buttonForce2.style.visibility = 'visible'
 }
 
 buttonForce2.onclick = () => {
@@ -30,6 +32,8 @@ buttonForce2.onclick = () => {
     firstCharge.value = ''
     secondCharge.value = ''
     distance.value = ''
+
+
     console.log(forceCharge)
     
     const e = K[1] + (micro[1] * 2)
