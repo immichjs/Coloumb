@@ -16,7 +16,7 @@ e.btnF1.onclick = () => {
         alert(info)
     } else {
         loadForce.push(force())
-
+        resetValue()
         e.btnF1.classList.add('invisible')
         e.btnF2.classList.remove('invisible')
     }
