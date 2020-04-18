@@ -13,6 +13,8 @@ img {
     width: 150px;
     position: relative;
     margin-right: 50px;
+    border-right: 1px solid #fff;
+    padding-right: 50px;
 }
 
 .options {
