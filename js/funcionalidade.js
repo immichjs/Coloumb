@@ -20,8 +20,9 @@ e.btnF2.onclick = () => {
     loadForce.push(force())
     resetValue()
 
+    console.log('Formula: K.|Q|.|Q| % d²')
     console.log(loadForce)
-    
+
     const negative = [
         loadForce[0] - loadForce[1],
         loadForce[1] - loadForce[0],
