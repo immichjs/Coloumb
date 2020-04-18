@@ -4,16 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="icon" href="https://image.flaticon.com/icons/svg/1819/1819426.svg">
     <link rel="stylesheet" href="css/style.css">
     <title>Couloumb</title>
 </head>
 <body>
-    <input type="text" id="first-charge" placeholder="Carga 1 ( Q1 )">
-    <input type="text" id="second-charge" placeholder="Carga 2 ( Q2 )">
-    <input type="text" id="distance" placeholder="Distância ( d )">
-
-    <button>F1</button>
-    <button class="invisible">F2</button>
+    <img src="https://image.flaticon.com/icons/svg/1819/1819426.svg">
+    <div class="options">
+        <label>Carga 1:</label>
+        <input type="text" id="first-charge" placeholder="Apenas o numero">
+        <label>Carga 2:</label>
+        <input type="text" id="second-charge" placeholder="Apenas o numero">
+        <label>Distância:</label>
+        <input type="text" id="distance" placeholder="Em metro">
+        
+        <button>F1</button>
+        <button class="invisible">F2</button>
+    </div>
     
     <script type="module" src="js/funcionalidade.js"></script>
 </body>
