@@ -1,52 +1,33 @@
-const firstCharge = document.getElementById('first-charge')
-const secondCharge = document.getElementById('second-charge')
-const distance = document.getElementById('distance')
+import { e } from './elements.js'
+import { force, elevation} from './formula.js'
 
-const buttonForce1 = document.getElementsByTagName('button')[0]
-const buttonForce2 = document.getElementsByTagName('button')[1]
+const loadForce = []
 
-const K = [9 * Math.pow(10, 9), 9]
-const mili = [Math.pow(10, -3), -3] // mili
-const micro = [Math.pow(10, -6), -6] // micro
-const nano = [Math.pow(10, -9), -9] // nano
-
-function force () {
-    const formula = (K[0] * firstCharge.value * micro[0] * secondCharge.value * micro[0]) / distance.value ** 2
-    return formula.toPrecision(2)
+const resetValue = () => {
+    e.firstCharge.value = ''
+    e.secondCharge.value = ''
+    e.distance.value = ''
 }
 
-const forceCharge = []
+e.btnF1.onclick = () => {
+    loadForce.push(force())
 
-buttonForce1.onclick = () => {
-    forceCharge.push(force())
-    
-    buttonForce1.style.display = 'none'
-    buttonForce1.style.visibility = 'hidden'
-    buttonForce2.style.display = 'inline'
-    buttonForce2.style.visibility = 'visible'
+    e.btnF1.classList.add('invisible')
+    e.btnF2.classList.remove('invisible')
 }
 
-buttonForce2.onclick = () => {
-    forceCharge.push(force())
+e.btnF2.onclick = () => {
+    loadForce.push(force())
+    resetValue()
 
-    firstCharge.value = ''
-    secondCharge.value = ''
-    distance.value = ''
-
-
-    console.log(forceCharge)
+    console.log(loadForce)
     
-    const e = K[1] + (micro[1] * 2)
-
     const negative = [
-        forceCharge[0] - forceCharge[1],
-        forceCharge[1] - forceCharge[0],
-        (forceCharge[0] - forceCharge[1]) * 10 ** e,
-        (forceCharge[1] - forceCharge[0]) * 10 ** e,
+        loadForce[0] - loadForce[1],
+        loadForce[1] - loadForce[0],
+        (loadForce[0] - loadForce[1]) * 10 ** elevation,
+        (loadForce[1] - loadForce[0]) * 10 ** elevation,
     ]
 
-    console.log(`Foram retornados Quatro alternativas.\n\n
-    Resultante Negativa: ${negative[0]} = ${negative[2].toPrecision(2)}\n
-    Resultante Positiva: ${negative[1]} = ${negative[3].toPrecision(2)}`)
+    console.log(`Possíveis resultantes:\n\nResultante Negativa: ${negative[0]} = ${negative[2].toPrecision(2)}N\nResultante Positiva: ${negative[1]} = ${negative[3].toPrecision(2)}N`)
 }
-
