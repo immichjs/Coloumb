@@ -10,19 +10,23 @@
     <title>Automação da formula de Coulomb</title>
 </head>
 <body>
-    <img src="img/collision.svg" alt="Imagem de logo">
+    <img class="logo" src="img/collision.svg" alt="Imagem de logo" draggable="false">
     <div class="options">
         <label>Carga 1:</label>
-        <input type="text" id="first-charge" placeholder="Apenas numero">
+        <input title="Digite o valor da primeira carga" type="text" id="first-charge" placeholder="Apenas numero">
         <label>Carga 2:</label>
-        <input type="text" id="second-charge" placeholder="Apenas numero">
+        <input title="Digite o valor da segunda carga" type="text" id="second-charge" placeholder="Apenas numero">
         <label>Distância:</label>
-        <input type="text" id="distance" placeholder="Em metro">
+        <input title="Digite o valor da distância" type="text" id="distance" placeholder="Em metro">
         
-        <button>Adicionar valores na F1</button>
-        <button class="invisible">Adicionar valores na F2</button>
+        <button title="Todos os valores digitados acima serão colocados numa F1">Adicionar valores na F1</button>
+        <button title="Todos os valores digitados acima serão colocados numa F2" class="invisible">Adicionar valores na F2</button>
     </div>
     
-    <script type="module" src="js/funcionalidade.js"></script>
+    <a href="https://github.com/immichjs">
+        <img title="GitHub do desenvolvedor" id="social" src="https://image.flaticon.com/icons/svg/733/733609.svg" alt="GitHub: https://github.com/immichjs" draggable="false">
+    </a>
+    
+    <script type="module" src="js/operation.js"></script>
 </body>
 </html>
