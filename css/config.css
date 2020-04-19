@@ -1,0 +1,68 @@
+.config {
+    display: flex;
+    background: #0d0d12;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.config .buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    width: 35%;
+}
+
+.buttons button {
+    border: none;
+    border-radius: 6px;
+    outline: none;
+    padding: 20px;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px -8px rgba(255, 255, 255, 0.05);
+    color: #fff;
+    letter-spacing: 0.2px;
+    background: #222130;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: .2s;
+}
+
+.buttons button:hover {
+    transform: scale(0.98);
+    background: #443898;
+}
+
+.buttons #rule-id {
+    grid-column: 1/3;
+}
+
+@media screen and (max-width: 1172px) {
+    .config .buttons {
+        display: grid;
+        grid-gap: 20px;
+        width: 50%;
+    }
+
+    .buttons button {
+        font-size: 11px;
+    }
+}
+
+@media screen and (max-width: 638px) {
+    .config .buttons {
+        display: grid;
+        grid-gap: 20px;
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 555px) {
+    .config .buttons {
+        display: grid;
+        grid-gap: 20px;
+        width: 80%;
+    }
+}

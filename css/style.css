@@ -81,7 +81,7 @@ button:hover {
     color: #fff;
 }
 
-#social {
+/* #social {
     width: 80px;
     margin-left: 30px;
     padding-left: 30px;
@@ -91,7 +91,7 @@ button:hover {
 #social:hover {
     cursor: pointer;
     transform: translateY(-2px);
-}
+} */
 
 .invisible {
     display: none;

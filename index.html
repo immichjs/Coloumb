@@ -6,27 +6,32 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="icon" href="img/collision.svg">
-    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/config.css">
+    <link rel="stylesheet" href="css/first_section.css">
     <title>Automação da formula de Coulomb</title>
 </head>
 <body>
-    <img class="logo" src="img/collision.svg" alt="Imagem de logo" draggable="false">
-    <div class="options">
-        <label>Carga 1:</label>
-        <input title="Digite o valor da primeira carga" type="text" id="first-charge" placeholder="Apenas numero">
-        <label>Carga 2:</label>
-        <input title="Digite o valor da segunda carga" type="text" id="second-charge" placeholder="Apenas numero">
-        <label>Distância:</label>
-        <input title="Digite o valor da distância" type="text" id="distance" placeholder="Em metro">
-        
-        <button title="Todos os valores digitados acima serão colocados numa F1">Adicionar valores na F1</button>
-        <button title="Todos os valores digitados acima serão colocados numa F2" class="invisible">Adicionar valores na F2</button>
-    </div>
-    
-    <a href="https://github.com/immichjs">
-        <img title="GitHub do desenvolvedor" id="social" src="https://image.flaticon.com/icons/svg/733/733609.svg" alt="GitHub: https://github.com/immichjs" draggable="false">
-    </a>
-    
-    <script type="module" src="js/operation.js"></script>
+    <main class="container">
+        <section class="config">
+            <div class="buttons">
+                <button id="rule-id">Regras</button>
+                <button id="calc-one-force">Calcular uma força</button>
+                <button id="calc-two-force">Calcular duas força</button>
+            </div>
+        </section>
+
+        <section class="one-force">
+            <div class="of-data">
+                <input title="Digite o valor da primeira carga" type="text" id="first-charge" placeholder="Apenas numero">
+                <input title="Digite o valor da segunda carga" type="text" id="second-charge" placeholder="Apenas numero">
+                <input title="Digite o valor da distância" type="text" id="distance" placeholder="Em metro">
+                
+                <button title="Todos os valores digitados acima serão colocados numa F1">Adicionar valores na F1</button>
+                <button title="Todos os valores digitados acima serão colocados numa F2" class="invisible">Adicionar valores na F2</button>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
