@@ -1,7 +1,6 @@
 .config {
     display: flex;
     background: #0d0d12;
-    width: 100%;
     height: 100vh;
     align-items: center;
     justify-content: center;
@@ -11,7 +10,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
-    width: 35%;
+    width: 40%;
 }
 
 .buttons button {
@@ -31,7 +30,7 @@
 }
 
 .buttons button:hover {
-    transform: scale(0.98);
+    transform: translateY(-1.5px);
     background: #443898;
 }
 
