@@ -1,8 +1,6 @@
 import { e } from './elements.js'
 import { force, elevation} from './formula.js'
 
-const loadForce = []
-
 const resetValue = () => {
     e.firstCharge.value = ''
     e.secondCharge.value = ''
@@ -10,6 +8,24 @@ const resetValue = () => {
 }
 
 const info = 'É preciso conter valores válidos.'
+
+let loadForce = 0
+
+export function calcOneForce () {
+    if (isNaN(e.firstCharge.value || e.secondCharge.value || e.distance.value) || e.firstCharge.value == '' || e.secondCharge.value == '' || e.distance.value == '')  {
+        alert(info)
+    } else {
+        loadForce = force()
+    
+        console.log('Formula: K.|Q|.|Q| % d²')
+        console.log(loadForce)
+    
+        const resulting = loadForce * 10 ** elevation
+    
+    
+        console.log(`Possíveis resultantes:\n\nResultante Negativa: ${loadForce}e${elevation} = ${resulting.toPrecision(2)}N`)
+    }
+}
 
 e.btnF1.onclick = () => {
     if (isNaN(e.firstCharge.value || e.secondCharge.value || e.distance.value) || e.firstCharge.value == '' || e.secondCharge.value == '' || e.distance.value == '')  {

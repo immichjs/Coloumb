@@ -1,5 +1,10 @@
 export const e = {
     // getElementById
+    btn_one_force: document.getElementById('one-force-button'),
+
+    one_force: document.getElementById('one-force-id'),
+    calc_force: document.getElementById('calc-force'),
+    
     firstCharge: document.getElementById('first-charge'),
     secondCharge: document.getElementById('second-charge'),
     distance: document.getElementById('distance'),
