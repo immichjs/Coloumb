@@ -22,7 +22,7 @@ Javascript ES6
 
 - Com o tempo eu vou melhorando o código e o design do projeto, e deixando mais legível e com uma melhor experiência para se utilizar, pois eu fiz com a intenção de ser apenas um simples protótipo.
 
-- Por ser feito pra resolver 1 unico problema especifico e eu nem sei se está correto, é possível que para outras questões não funcione, mas é preciso testar utilizando papel e caneta para ver se os resultados batem.
+- Por ser feito pra resolver 1 único problema especifico e eu nem sei se está correto, é possível que outras questões não funcione corretamente, mas é preciso testar utilizando papel e caneta para verificar se os resultados batem.
 
 ### Author
 
