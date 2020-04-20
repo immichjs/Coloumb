@@ -1,4 +1,4 @@
-.force {
+.two-force {
     position: fixed;
     top: 0;
     right: 0;
@@ -16,14 +16,14 @@
     visibility: hidden;
 }
 
-.force-data {
+.two-force-data {
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 10px;
     width: 40%;
 }
 
-.force-data input {
+.two-force-data input {
     text-align: center;
     color: #32277c;
 }
@@ -34,7 +34,7 @@
     color: #32277c55;
 }
 
-.force-data button {
+.two-force-data button {
     text-align: center;
     cursor: pointer;
     color: #fff;
@@ -43,7 +43,7 @@
     margin-top: 10px;
 }
 
-.force-data button:hover {
+.two-force-data button:hover {
     transform: translateY(-1.5px);
     background: rgba(0, 0, 0, 0.4);
 }
@@ -60,21 +60,21 @@ input, button {
 }
 
 @media screen and (max-width: 1172px) {
-    .force .force-data {
+    .two-force .two-force-data {
         display: grid;
         width: 50%;
     }
 }
 
 @media screen and (max-width: 638px) {
-    .force .force-data {
+    .two-force .two-force-data {
         display: grid;
         width: 60%;
     }
 }
 
 @media screen and (max-width: 555px) {
-    .force .force-data {
+    .two-force .two-force-data {
         display: grid;
         width: 70%;
     }
