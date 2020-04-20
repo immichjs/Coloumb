@@ -7,9 +7,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="icon" href="img/collision.svg">
 
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/config.css">
-    <link rel="stylesheet" href="css/first_section.css">
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/config.css">
+    <link rel="stylesheet" href="src/css/first_section.css">
     <title>Automação da formula de Coulomb</title>
 </head>
 <body>
@@ -30,9 +30,18 @@
                 <button id="calculate-force" class="calc">Calcular força</button>
             </div>
         </section>
+
+        <section id="two-force-id" class="two-force hidden">
+            <div class="two-force-data">
+                <input title="Digite o valor da primeira carga" type="text" id="new-first-charge" placeholder="Valor da carga">
+                <input title="Digite o valor da segunda carga" type="text" id="new-second-charge" placeholder="Valor da carga">
+                <input title="Digite o valor da distância" type="text" id="new-distance-between" placeholder="Valor da distância em metro">
+                <button id="calculate-force" class="calc">Calcular força</button>
+            </div>
+        </section>
         <!-- <button title="Todos os valores digitados acima serão colocados numa F2" class="hidden">Adicionar valores na F2</button> -->
     </main>
 
-    <script type="module" src="js/call.js"></script>
+    <script type="module" src="src/js/call.js"></script>
 </body>
 </html>
