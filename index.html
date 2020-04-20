@@ -17,22 +17,22 @@
         <section class="config">
             <div class="buttons">
                 <button id="rule-id">Regras</button>
-                <button id="one-force-button">Calcular uma força</button>
-                <button id="two-force-button">Calcular duas força</button>
+                <button id="interface-button-calculate-force">Calcular uma força</button>
+                <button id="interface-button-calculate-two-force">Calcular duas força</button>
             </div>
         </section>
 
-        <section id="one-force-id" class="one-force hidden">
-            <div class="of-data">
+        <section id="force-id" class="force hidden">
+            <div class="force-data">
                 <input title="Digite o valor da primeira carga" type="text" id="first-charge" placeholder="Valor da carga">
                 <input title="Digite o valor da segunda carga" type="text" id="second-charge" placeholder="Valor da carga">
-                <input title="Digite o valor da distância" type="text" id="distance" placeholder="Valor da distância em metro">
-                <button id="calc-force" class="calc">Calcular a força</button>
+                <input title="Digite o valor da distância" type="text" id="distance-between" placeholder="Valor da distância em metro">
+                <button id="calculate-force" class="calc">Calcular força</button>
             </div>
         </section>
         <!-- <button title="Todos os valores digitados acima serão colocados numa F2" class="hidden">Adicionar valores na F2</button> -->
     </main>
 
-    <script type="module" src="js/controller/script.js"></script>
+    <script type="module" src="js/call.js"></script>
 </body>
 </html>

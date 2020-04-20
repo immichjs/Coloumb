@@ -1,4 +1,4 @@
-.one-force {
+.force {
     position: fixed;
     top: 0;
     right: 0;
@@ -16,14 +16,14 @@
     visibility: hidden;
 }
 
-.of-data {
+.force-data {
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 10px;
     width: 40%;
 }
 
-.of-data input {
+.force-data input {
     text-align: center;
     color: #32277c;
 }
@@ -34,7 +34,7 @@
     color: #32277c55;
 }
 
-.of-data button {
+.force-data button {
     text-align: center;
     cursor: pointer;
     color: #fff;
@@ -43,7 +43,7 @@
     margin-top: 10px;
 }
 
-.of-data button:hover {
+.force-data button:hover {
     transform: translateY(-1.5px);
     background: rgba(0, 0, 0, 0.4);
 }
@@ -60,21 +60,21 @@ input, button {
 }
 
 @media screen and (max-width: 1172px) {
-    .one-force .of-data {
+    .force .force-data {
         display: grid;
         width: 50%;
     }
 }
 
 @media screen and (max-width: 638px) {
-    .one-force .of-data {
+    .force .force-data {
         display: grid;
         width: 60%;
     }
 }
 
 @media screen and (max-width: 555px) {
-    .one-force .of-data {
+    .force .force-data {
         display: grid;
         width: 70%;
     }
